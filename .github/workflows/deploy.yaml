@@ -46,7 +46,7 @@ jobs:
       - name: Proprocess website data
         run: Rscript _preprocess.R
       - name: Build site
-        run: rm -rf public/ && Rscript -e 'blogdown::build_site(build_rmd = TRUE)'
+        run: rm -rf public/ && Rscript -e 'blogdown::build_site()'
       - name: Deploy to main
         uses: peaceiris/actions-gh-pages@v3.7.3
         with:

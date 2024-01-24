@@ -20,11 +20,6 @@ organizations:
 bio: "TODO a short description"
 
 # Interests to show in About widget
-Goals:
-  - 🧠 TODO
-  - 🐛 TODO
-  - 🌱 TODO
-  - 🌳 TODO
 
 
 # Social/Academic Networking
@@ -39,4 +34,9 @@ email: ''
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
-TODO, a longer description
+The **Aarhus  Comprehensive Compotational Entomology Summer School** is a five-day course to learn how to apply state-of-the-art **imaging**, deep-learning and **AI** methods to **insect ecology and entomology**. It will run in **Aarhus, Denmark** , from **September 30th** to **October 4th, 2024**.
+What we provide:
+
+* A series of **guest lectures** from international experts
+* A **project-based** learning experience within a **multidisciplinary student team**
+* **Free accommodation and food** for the selected students
