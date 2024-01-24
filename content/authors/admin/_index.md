@@ -34,7 +34,7 @@ email: ''
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
-The **Aarhus  Comprehensive Compotational Entomology Summer School** is a five-day course to learn how to apply state-of-the-art **imaging**, deep-learning and **AI** methods to **insect ecology and entomology**. It will run in **Aarhus, Denmark** , from **September 30th** to **October 4th, 2024**.
+The **Aarhus  Comprehensive Computational Entomology Summer School** is a five-day course to learn how to apply state-of-the-art **imaging**, deep-learning and **AI** methods to **insect ecology and entomology**. It will run in **Aarhus, Denmark** , from **September 30th** to **October 4th, 2024**.
 What we provide:
 
 * • A series of **guest lectures** from international experts
