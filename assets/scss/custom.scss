@@ -1,0 +1,59 @@
+body{
+  display:none;
+}
+ #about ul {
+  list-style-type: none;
+ }
+.d-lg-inline-flex{
+  line-height:48px;
+}
+.brand-img{
+  display: flex;
+  vertical-align:middle;
+  margin-left: 48px;
+  width:48px;
+  height:48px;
+}
+
+.section-subheading {
+  font-size: 1.75rem;
+}
+
+ul.ul-interests li {
+  font-size: 1.2rem;
+}
+
+.btn-primary {
+  background-color: rgb(1,123,51) !important;
+  border-radius:  8px !important;
+  margin-left: 2px !important;
+  margin-right: 2px !important;
+  margin-top: 0px !important;
+  margin-bottom:  2px !important;
+
+}
+
+.btn-toolbar .btn.btn-primary:active, .btn-toolbar .btn.btn-primary.active {
+  background-color: rgb(1,82,32) !important;
+  border-color: rgb(10,148,62) !important;
+}
+
+btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgb(10,148,62) !important;
+}
+
+a{
+  color: rgb(10,168,112);
+}
+a:hover{
+     color: rgb(10,228,152);
+}
+.dark .section-heading p {
+  color: #eee;
+  font-weight: bold;
+}
+
+#leaflet{
+  height:350px;
+  width: 100%;
+}
