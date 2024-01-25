@@ -7,8 +7,8 @@ main:
   - name: Home
     weight: 10
     url: '#about'
-  - name: Registration
-    url: '#registration'
+  - name: Application
+    url: '#application'
     weight: 20
   - name: Program
     url: '#program'

@@ -43,7 +43,7 @@ $( document ).ready(function(){
         cache: false,
         success: function(data) { if(data != null){
           $( '<a href="/"><img class="brand-img" src="' + data["icons"][1]["src"] +'"></a>' ).insertBefore( ".navbar-brand");
-          //$(".navbar-brand").prepend('<div><img class="brand-img" src="' + data["icons"][1]["src"] +'"><span> DARSA</span></div>');
+
         } },
     });
 

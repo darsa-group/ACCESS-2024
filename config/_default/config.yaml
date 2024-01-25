@@ -4,7 +4,7 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 title: 'ACCESS-2024' # Website name
-baseURL: ' https://darsa.info/ACCESS-2024/' # Website URL
+baseURL: 'https://darsa.info/ACCESS-2024/' # Website URL
 
 ############################
 ## LANGUAGE
