@@ -11,6 +11,9 @@ jobs:
   blogdown:
 
     runs-on: ubuntu-latest
+    env:
+      GOOGLE_SERVICE_JSON_KEY: ${{ secrets.GOOGLE_SERVICE_JSON_KEY }}
+      PEOPLE_GOOGLE_SHEET_ID: "1Ip0dxxJXEcme3yehoY-NYYoZcJ-4iHod8YZNDRDj9k8"
     steps:
       - uses: actions/checkout@v1
       - uses: r-lib/actions/setup-r@v2
