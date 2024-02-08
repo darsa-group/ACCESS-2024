@@ -1,7 +1,6 @@
 ---
 title: {name}
-summary: {role}
-date: {start_date}
+summary: {institution}, {role_string}
 # Optional external URL for project (replaces project detail page).
 external_link: ''
 
@@ -13,9 +12,8 @@ url_slides: ''
 url_video: ''
 
 tags: {tags}
-weight: {weight}
+
 ---
 
-<span class="people-dates"> From {start_date} to {end_date_str}</span>
 
 {bio}

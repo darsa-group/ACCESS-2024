@@ -5,7 +5,7 @@ headless: true
 # Order that this section appears on the page.
 weight: 25
 
-title: Program
+title: Preliminary Program
 subtitle:
 
 design:
