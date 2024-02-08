@@ -24,6 +24,7 @@ This [application form](https://forms.gle/5nepSFsC4tcBWbG88) will allow us to:
 We will select candidates based on several criteria:
 * Motivation -- You must provide a 1-2 page motivation statement explaining your background, **why you are interested in the topic**, what you wish to learn, etc. Ensure you explain what you have already done in this direction.
 * CV -- You must provide a CV, which will help us understand **your background, seniority and current expertise**. 
-* Project idea -- Importantly, this course is project-based. You must describe, in one page, **a specific problem you (or others) have or (will have)**, related to insect ecology, behaviour, entomology, etc. Ensure you explain how this course would help you address this issue.
-* Time commitment -- You must confirm that, if selected, **you will be able to dedicate time** to prepare (30h) and physically attend the 5-day event.
+* Project idea -- Importantly, this course is project-based. You must describe, **1500 characters**, **a specific research question or problem you (or others) have or (will have)**, related to insect ecology, behaviour, entomology, etc. Ensure you explain both the biological context and how this course would help you address this issue. 
+Do not be afraid of being creative and thinking out of the box: your project could be to monitor behaviour in the field or in the lab; to detect or quantify traits in insect specimens; to build novel hardware or mobile applications; to automate a take you can already do or to obtain new content; etc.
+* Time commitment -- You must confirm that, if selected, **you will be able to dedicate time** to prepare (30h, remotely) and physically attend the 5-day event.
 * Additional information -- In order to best match you in operational teams, we will also ask you several additional questions.
