@@ -18,9 +18,9 @@ design:
 We can accommodate a maximum of **20 outstanding candidates** during our five day residential course.
 
 ### Course requirements
-The course is designed for early career researchers - graduate students, PhD and postdocs - from a biological or data science background who are interested in computational entomology. Specific requirements are as follows:
-* Programming experience -- Candidates must demonstrate at least basic programming skills, ideally in python. Otherwise, candidates will be expected to learn before the course begins.
-* Time commitment -- You must confirm that, if selected, **you will be able to dedicate time** to prepare (30h, remotely) and physically attend the 5-day event.
+The course is designed for early career researchers interested in computational entomology, whether they come from a biological or data science background. Specific requirements are as follows:
+* Programming experience -- Candidates must demonstrate at least basic programming skills, ideally in python. Otherwise, candidates will be expected to develop those skills by the start of the course.
+* Time commitment -- You must confirm that, if selected, **you will be able to dedicate time** to prepare for the course (30h, remotely) and then physically attend the 5-day event.
 * Above all, candidates must be **excited** to apply new technologies and methods to answer interesting biological questions!
 
 ### Selection process
