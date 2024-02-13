@@ -11,6 +11,7 @@ $("body").hide();
 
 $( document ).ready(function(){
 
+
   var getFavicon = function(){
     var favicon = undefined;
     var nodeList = document.getElementsByTagName("link");
@@ -21,8 +22,11 @@ $( document ).ready(function(){
             favicon = nodeList[i].getAttribute("href");
         }
     }
+    console.log(favicon);
     return favicon;
 }
+
+
   String.prototype.hash = function() {
     var hash = 0,
       i, chr;
@@ -47,40 +51,24 @@ $( document ).ready(function(){
         } },
     });
 
-$("#about div.section-subheading").parent("div").removeClass("col-md-5").addClass("col-md-12")
-
-baseurl = $("a.nav-link")[0].href;
-$("div.d-none > a ").attr('href', baseurl);
-$("a.navbar-brand ").attr('href', baseurl);
-
-//  var loc = [56.1667,10.2020]
-//  $( '<div id="leaflet"></div>' ).insertAfter( ".fa-ul" );
+$("#about div.section-subheading").parent("div").removeClass("col-md-5").addClass("col-md-12");
 
 
-//  if(document.getElementById("leaflet") !== null){
-//    var map = new L.Map('leaflet', {
-//        center: loc,
-//        zoom: 14,
-//        layers: [
-//            new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-//                'attribution': 'Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
-//            })
-//        ]
-//    });
-//     var marker = L.marker(loc);
-//     marker.addTo(map);
-//    setTimeout(function () {map.invalidateSize(true);}, 100);
-
-$("body").hide()
+$("body").hide();
 let foo = prompt('Password');
 var h = foo.hash();
 if(h == 2009550711){
    $("body").show();
 }
 else{
-  console.log(foo);
-  console.log(h);
    $("body").hide();
  }
+
+   baseurl = $("a.nav-link")[0].href;
+  $("div.d-none > a:nth-child(1)").attr('href', baseurl);
+  console.log(baseurl);
+
+  $("a.navbar-brand ").attr('href', baseurl);
+
   })
 </script>
