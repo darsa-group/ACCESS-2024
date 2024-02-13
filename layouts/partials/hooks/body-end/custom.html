@@ -49,6 +49,10 @@ $( document ).ready(function(){
 
 $("#about div.section-subheading").parent("div").removeClass("col-md-5").addClass("col-md-12")
 
+baseurl = $("a.nav-link")[0].href;
+$("div.d-none > a ").attr('href', baseurl);
+$("a.navbar-brand ").attr('href', baseurl);
+
 //  var loc = [56.1667,10.2020]
 //  $( '<div id="leaflet"></div>' ).insertAfter( ".fa-ul" );
 
