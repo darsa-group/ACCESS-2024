@@ -15,4 +15,4 @@ design:
   columns: '2'
 ---
 
-[]([https://upload.wikimedia.org/wikipedia/commons/5/56/Tiger.50.jpg](https://www.naturhistoriskmuseum.dk/admin/public/getimage.ashx?Image=/Files/Billeder/Mols/Mols%20Lab%20(20).jpg&Resolution=72&Compression=90&Width=1000)https://www.naturhistoriskmuseum.dk/admin/public/getimage.ashx?Image=/Files/Billeder/Mols/Mols%20Lab%20(20).jpg&Resolution=72&Compression=90&Width=1000)
+![molslab.jpg](https://github.com/jamiealison/ACCESS-2024/blob/source/assets/image/molslab.jpg)
