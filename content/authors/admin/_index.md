@@ -34,17 +34,17 @@ email: ''
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
-Recent development in machine learning and AI, are [transforming research entomology and insect ecology](https://www.pnas.org/doi/10.1073/pnas.2002545117). However there are still too few opportunities to learn how to best develop and apply these transformative technologies.
-To fill this gap, we started the **Aarhus  Comprehensive Computational Entomology Summer School**: a five-day course to learn how to apply state-of-the-art **imaging**, **deep-learning** and **AI** methods to **insect ecology and entomology**. 
+Recent developments in machine learning and AI are [transforming research in entomology and insect ecology](https://www.pnas.org/doi/10.1073/pnas.2002545117). However, there are too few opportunities to learn how to develop and apply these transformative methods and technologies.
+To fill this gap, we started the **Aarhus  Comprehensive Computational Entomology Summer School**: a five-day course to learn how to apply state-of-the-art **imaging**, **deep-learning** and **AI** methods to **insect ecology and entomology**.
 
 ## Where and when
-ACCESS-2024 will run in **Aarhus, Denmark** , from **September 30th** to **October 4th, 2024**. The event is **in-person**. [Aarhus University](https://international.au.dk/) is a highly ranked institution, located in a vibrant city, with several researchers leading the field of computational entomology.
+ACCESS-2024 is an **in-person, residential summer school** based in the beautiful **Mols Bjerge National Park** near Aarhus, Denmark. The event will run from **September 30th** to **October 4th, 2024**. [Aarhus University](https://international.au.dk/) is a highly ranked institution, located in a vibrant city, with several researchers leading the field of computational entomology.
 
 ## What we offer
-
+* • A fully-funded course - **free tuition, accommodation and food** for the selected candidates
 * • A series of **guest lectures** and **practical workshops** from international experts
-* • A **project-based** learning experience within a **multidisciplinary student team** (you will be matched with other participants)
-* • **Free accommodation and food** for the selected students
+* • A **project-based** learning experience within a **multidisciplinary student team**
+* • Unfortunately we cannot fund travel to or from the summer school
 
 ## Who the course is for
 * • Early career researchers (graduate students, PhD and postdocs)
