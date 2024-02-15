@@ -15,4 +15,13 @@ design:
   columns: '2'
 ---
 
-![molslab.jpg](https://github.com/jamiealison/ACCESS-2024/blob/source/assets/image/molslab.jpg)
+<p align="center">
+  <img alt="mols" src="https://github.com/jamiealison/ACCESS-2024/blob/source/assets/image/mols.jpg" width="80%">
+
+
+
+<p align="center">
+  <img alt="molslab" src="https://github.com/jamiealison/ACCESS-2024/blob/source/assets/image/molslab.jpg" width="45%">
+&nbsp; &nbsp; &nbsp; &nbsp;
+  <img alt="horses" src="https://github.com/jamiealison/ACCESS-2024/blob/source/assets/image/horses.jpg" width="45%">
+</p>
