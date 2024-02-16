@@ -16,6 +16,9 @@ main:
   - name: Contributors
     url: '#people'
     weight: 40
+  - name: Venue
+    url: '#venue'
+    weight: 50
   - name: Contact
     url: '#contact'
     weight: 60

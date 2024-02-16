@@ -6,9 +6,9 @@
 headless: true
 
 # Order that this section appears on the page.
-weight: 20
+weight: 100
 
-title: Application
+title: Venue
 subtitle:
 
 design:
@@ -16,7 +16,7 @@ design:
 ---
 
 <p align="center">
-  <img alt="mols" src="https://github.com/jamiealison/ACCESS-2024/blob/source/assets/image/mols.jpg" width="80%">
+  <img alt="mols" src="img/mols.jpg" width="80%">
 
 ### The Mols Laboratory
 
@@ -27,7 +27,7 @@ Situated in the beautiful Mols Bjerge National Park, participants will develop n
 During automated monitoring field tests and extra-curricular excursions, participants will experience these rewilding agents in action, as well as the results of the rewilding process.
 
 <p align="center">
-  <img alt="molslab" src="https://github.com/jamiealison/ACCESS-2024/blob/source/assets/image/molslab.jpg" width="45%">
+  <img alt="molslab" src="img/molslab.jpg" width="45%">
 &nbsp; &nbsp; &nbsp; &nbsp;
-  <img alt="horses" src="https://github.com/jamiealison/ACCESS-2024/blob/source/assets/image/horses.jpg" width="45%">
+  <img alt="horses" src="img/horses.jpg" width="45%">
 </p>
