@@ -7,7 +7,7 @@
 <script>
 
 
-$("body").hide();
+//$("body").hide();
 
 $( document ).ready(function(){
 
@@ -54,6 +54,7 @@ $( document ).ready(function(){
 $("#about div.section-subheading").parent("div").removeClass("col-md-5").addClass("col-md-12");
 $("div.article-metadata").hide();
 
+/*
 $("body").hide();
 let foo = prompt('Password');
 var h = foo.hash();
@@ -63,12 +64,14 @@ if(h == 2009550711){
 else{
    $("body").hide();
  }
-
+*/
    baseurl = $("a.nav-link")[0].href;
   $("div.d-none > a:nth-child(1)").attr('href', baseurl);
   console.log(baseurl);
 
   $("a.navbar-brand ").attr('href', baseurl);
+  $("img.avatar-circle").css('border-radius', '5%');
+
 
   })
 </script>

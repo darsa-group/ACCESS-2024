@@ -6,7 +6,7 @@
 headless: true
 
 # Order that this section appears on the page.
-weight: 20
+weight: 25
 
 title: Application
 subtitle:
@@ -33,4 +33,4 @@ Do not be afraid of being creative and thinking out of the box: your project cou
 ### Matching process
 We will also ask you several additional questions during your application. Should you be selected, we will use this information to form teams of candidates based on complementary skills and interests.
 
-To complete your application, please fill out the [application form](https://forms.gle/5nepSFsC4tcBWbG88) **by XX the XX of XX**.
+To complete your application, please fill out the [application form](https://forms.gle/5nepSFsC4tcBWbG88) **by April 15th, 2024**.

@@ -35,9 +35,6 @@ email: ''
 highlight_name: true
 ---
 
-<p align="center">
-  <img alt="placeholder" src="/img/drawing.svg" width="100%">
-</p>
 
 Recent developments in machine learning and AI are [transforming research in entomology and insect ecology](https://www.pnas.org/doi/10.1073/pnas.2002545117). However, there are too few opportunities to learn how to develop and apply these transformative methods and technologies.
 To fill this gap, we started the **Aarhus  Comprehensive Computational Entomology Summer School**: a five-day course to learn how to apply state-of-the-art **imaging**, **deep-learning** and **AI** methods to **insect ecology and entomology**.

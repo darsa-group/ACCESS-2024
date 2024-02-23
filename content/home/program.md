@@ -11,3 +11,7 @@ subtitle:
 design:
   columns: '2'
 ---
+
+<p align="center">
+  <img alt="program" src="img/simple_program.png" width="100%">
+</p>
