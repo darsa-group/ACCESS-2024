@@ -92,10 +92,11 @@ make_people <- function(id_){
   themes <- str_replace(themes,"theme_","")
 
   tags <- sapply(ROLES,function(i) {
-    print(paste("role_",i))
+    print(paste0("role_",i))
     ifelse(row[[paste0("role_",i)]], i, NA)}
     )
 
+  row$weight = row$role_organiser * 7 + row$role_keynote * 5 + row$role_assistant * 1
   tags <- na.omit(tags)
   #tags <- c(row$role)
   #todo add an alumni tag if end date is in the past
