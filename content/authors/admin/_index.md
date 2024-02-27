@@ -17,7 +17,7 @@ organizations:
 #    url: https://qgg.au.dk
 
 # Short bio (displayed in user profile at end of posts)
-bio: "TODO a short description"
+bio: "A five-day course to learn how to apply state-of-the-art imaging, deep-learning and AI methods to insect ecology and entomology"
 
 # Interests to show in About widget
 

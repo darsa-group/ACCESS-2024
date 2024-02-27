@@ -15,7 +15,7 @@ design:
   columns: '2'
 ---
 
-We can accommodate a maximum of **20 outstanding candidates** during our five day residential course.
+We can accommodate a maximum of **20 candidates** during our five day residential course.
 
 ### Course requirements
 The course is designed for early career researchers interested in computational entomology, whether they come from a biological or data science background. Specific requirements are as follows:
