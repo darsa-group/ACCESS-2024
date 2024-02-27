@@ -448,9 +448,9 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="0.80789777"
-     inkscape:cx="177.62148"
-     inkscape:cy="-196.80708"
+     inkscape:zoom="25.852728"
+     inkscape:cx="-3.03643"
+     inkscape:cy="10.985301"
      inkscape:window-width="1920"
      inkscape:window-height="1131"
      inkscape:window-x="0"
@@ -465,13 +465,24 @@
        width="703"
        height="326"
        margin="0"
-       bleed="0" />
+       bleed="0"
+       inkscape:export-filename="simple_program.png"
+       inkscape:export-xdpi="218.49217"
+       inkscape:export-ydpi="218.49217" />
   </sodipodi:namedview>
   <g
      id="g1"
      inkscape:groupmode="layer"
      inkscape:label="1"
      transform="translate(-229.83333,-71)">
+    <rect
+       style="fill:#ffffff;stroke:none;stroke-width:7.55906;stroke-linecap:round"
+       id="rect1"
+       width="702.50006"
+       height="326"
+       x="229.83333"
+       y="71"
+       ry="0" />
     <path
        id="path5"
        d="M 71,20 H 206 V 135 H 71 Z"
@@ -552,7 +563,7 @@
        clip-path="url(#clipPath30)" />
     <path
        id="path33"
-       d="M 39.5,20 V 325 M 39,248.5 H 72 M 71.5,-1 v 326 m 134,-326 v 136 m 0,37 v 39 m 134,-212 v 136 m 0,37 v 39 M 339,58.5 H 474 M 473.5,-1 v 136 m 0,37 v 39 M 607.5,-1 V 135 M 71,210.5 h 537 m -537,76 H 608 M 607.5,172 V 325 M 71,-0.5 h 671 m -703,21 h 703 m -135,38 h 135 m -403,38 h 403 m -703,38 h 703 m -671,38 H 742 M 39,324.5 H 742 M 741.5,-1 v 326"
+       d="M 39.5,-0.5 V 325 M 39,248.5 H 72 M 71.5,-1 v 326 m 134,-326 v 136 m 0,37 v 39 m 134,-212 v 136 m 0,37 v 39 M 339,58.5 H 474 M 473.5,-1 v 136 m 0,37 v 39 M 607.5,-1 V 135 M 71,210.5 h 537 m -537,76 H 608 M 607.5,172 V 325 M 39,-0.5 l 703,0 m -703,21 h 703 m -135,38 h 135 m -403,38 h 403 m -703,38 h 703 m -671,38 H 742 M 39,324.5 H 742 M 741.5,-1 v 326"
        style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
        transform="translate(190.83333,72)"
        clip-path="url(#clipPath34)"
