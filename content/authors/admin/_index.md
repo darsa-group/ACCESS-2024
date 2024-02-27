@@ -37,7 +37,7 @@ highlight_name: true
 
 
 
-<video id="video" controls="controls" poster="video/placeholder.jpg" preload="script" width="100%">
+<video id="video" controls="controls" poster="video/placeholder.jpg" preload width="100%">
 <source id="mp4" src="video/ACCESS-2024.mp4" type="video/mp4">
 </video>
 
