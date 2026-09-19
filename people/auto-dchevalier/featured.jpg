@@ -1,0 +1,1112 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+
+    <meta name="robots" content="noindex,nofollow">
+
+    <title>Browser Verification | UBC Cybersecurity</title>
+
+    <style>
+        :root {
+            --ubc-blue: #002145;
+            --ubc-secondary-blue: #2f5d7c;
+            --ubc-light-blue: #d7e0e7;
+            --ubc-mid-blue: #98b2c3;
+            --ubc-border: #c3d0db;
+            --ubcit-footer-blue: #aec3e4;
+            --ubc-white: #ffffff;
+            --ubc-text: #222222;
+            --ubc-muted: #505050;
+            --page-width: 1170px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            min-height: 100%;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background: var(--ubc-white);
+            color: var(--ubc-text);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        a {
+            color: var(--ubc-blue);
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -100px;
+            left: 16px;
+            z-index: 1000;
+            padding: 10px 16px;
+            background: var(--ubc-white);
+            color: var(--ubc-blue);
+            border: 2px solid var(--ubc-blue);
+        }
+
+        .skip-link:focus {
+            top: 10px;
+        }
+
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        /*
+         * Hidden normally. The noscript rules below display these
+         * elements only when JavaScript is disabled.
+         */
+
+        .javascript-disabled-message {
+            display: none;
+        }
+
+        /*
+         * UBC GLOBAL HEADER
+         */
+
+        .ubc-global-header {
+            height: 145px;
+            background: var(--ubc-white);
+            border-top: 3px solid var(--ubc-blue);
+        }
+
+        .ubc-global-header-inner {
+            width: min(var(--page-width), calc(100% - 40px));
+            height: 100%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        /*
+         * Enlarged crop of the official 1500px by 600px CLF sprite.
+         */
+
+        .ubc-wordmark {
+            width: 840px;
+            max-width: 100%;
+            height: 105px;
+            flex: 0 0 auto;
+            background-image:
+                url("https://cdn.ubc.ca/clf/7.0.4/img/ubc7-clf-sprite-blue.png");
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            background-size: 1850px 740px;
+        }
+
+        /*
+         * UBC UNIT BAR
+         */
+
+        .ubc-unit-bar {
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            background: var(--ubc-blue);
+            color: var(--ubc-white);
+            box-shadow: inset 0 -10px 10px -10px #000;
+        }
+
+        .ubc-unit-inner {
+            width: min(var(--page-width), calc(100% - 40px));
+            margin: 0 auto;
+        }
+
+        .ubc-unit-name {
+            margin: 0;
+            color: var(--ubc-white);
+            font-size: 20px;
+            font-weight: normal;
+            line-height: 1.25;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px #000;
+        }
+
+        .ubc-navigation-rule {
+            height: 40px;
+            background: #e6e6e6;
+            border-bottom: 1px solid var(--ubc-border);
+        }
+
+        .ubc-navigation-rule-inner {
+            width: min(var(--page-width), calc(100% - 40px));
+            height: 100%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            color: var(--ubc-blue);
+            font-size: 14px;
+        }
+
+        /*
+         * MAIN CONTENT
+         */
+
+        .page-content {
+            width: min(var(--page-width), calc(100% - 40px));
+            flex: 1;
+            margin: 0 auto;
+            padding: 58px 0 72px;
+        }
+
+        .verification-layout {
+            display: grid;
+            grid-template-columns:
+                minmax(0, 2fr)
+                minmax(250px, 1fr);
+            gap: 64px;
+            align-items: start;
+        }
+
+        .verification-main {
+            min-width: 0;
+        }
+
+        h1 {
+            margin: 0 0 18px;
+            color: var(--ubc-blue);
+            font-size: 36px;
+            line-height: 1.15;
+            font-weight: 700;
+        }
+
+        .lead {
+            max-width: 720px;
+            margin: 0 0 30px;
+            color: var(--ubc-muted);
+            font-size: 20px;
+            line-height: 1.55;
+        }
+
+        /*
+         * VERIFICATION STATUS
+         */
+
+        .status-panel {
+            margin: 30px 0;
+            padding: 22px 24px;
+            background: var(--ubc-light-blue);
+            border: 1px solid var(--ubc-mid-blue);
+            color: var(--ubc-blue);
+        }
+
+        .status-heading {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: .04em;
+            text-transform: uppercase;
+        }
+
+        #status {
+            min-height: 24px;
+            font-size: 16px;
+        }
+
+        .progress-track {
+            height: 6px;
+            margin-top: 16px;
+            overflow: hidden;
+            background: var(--ubc-white);
+            border: 1px solid var(--ubc-mid-blue);
+        }
+
+        .progress-bar {
+            width: 35%;
+            height: 100%;
+            background: var(--ubc-secondary-blue);
+            animation:
+                verification-progress
+                1.5s
+                ease-in-out
+                infinite;
+        }
+
+        .status-panel.verified .progress-bar {
+            width: 100%;
+            animation: none;
+            background: var(--ubc-blue);
+        }
+
+        @keyframes verification-progress {
+            0% {
+                transform: translateX(-120%);
+            }
+
+            100% {
+                transform: translateX(390%);
+            }
+        }
+
+        /*
+         * CONTINUE BUTTON
+         */
+
+        .continue-button {
+            min-width: 190px;
+            padding: 13px 28px;
+            background: var(--ubc-blue);
+            color: var(--ubc-white);
+            border: 1px solid var(--ubc-blue);
+            border-radius: 0;
+            font: inherit;
+            font-weight: bold;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .continue-button:hover:not(:disabled),
+        .continue-button:focus:not(:disabled) {
+            background: var(--ubc-secondary-blue);
+            border-color: var(--ubc-secondary-blue);
+            outline: 3px solid var(--ubc-mid-blue);
+            outline-offset: 2px;
+        }
+
+        .continue-button:disabled {
+            background: var(--ubc-mid-blue);
+            border-color: var(--ubc-mid-blue);
+            color: var(--ubc-blue);
+            cursor: wait;
+        }
+
+        /*
+         * INFORMATION PANEL
+         */
+
+        .information-panel {
+            padding: 24px;
+            border-top: 5px solid var(--ubc-blue);
+            background: #f7f8f9;
+        }
+
+        .information-panel h2 {
+            margin: 0 0 14px;
+            color: var(--ubc-blue);
+            font-size: 22px;
+            line-height: 1.25;
+        }
+
+        .information-panel p {
+            margin: 0 0 16px;
+            color: var(--ubc-muted);
+            font-size: 14px;
+        }
+
+        .information-panel p:last-child {
+            margin-bottom: 0;
+        }
+
+        /*
+         * BABY-BLUE UBC CYBERSECURITY FOOTER
+         */
+
+        .it-unit-footer {
+            background: var(--ubcit-footer-blue);
+            color: var(--ubc-blue);
+            border-top: 1px solid var(--ubc-mid-blue);
+        }
+
+        .it-unit-footer-inner {
+            width: min(var(--page-width), calc(100% - 40px));
+            margin: 0 auto;
+            padding: 48px 0;
+            display: grid;
+            grid-template-columns: 5fr 7fr;
+            gap: 60px;
+        }
+
+        .it-unit-footer h2,
+        .it-unit-footer h3 {
+            margin: 0 0 18px;
+            color: var(--ubc-blue);
+            font-size: 18px;
+            line-height: 1.25;
+            font-weight: 700;
+            text-transform: none;
+        }
+
+        .it-unit-address {
+            margin: 0;
+            color: var(--ubc-blue);
+            font-size: 14px;
+            line-height: 1.55;
+            font-style: normal;
+        }
+
+        .it-unit-link-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+        }
+
+        .it-footer-links {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .it-footer-links li {
+            margin: 0 0 10px;
+        }
+
+        .it-footer-links a {
+            color: var(--ubc-blue);
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        .it-footer-links a:hover,
+        .it-footer-links a:focus {
+            text-decoration: underline;
+        }
+
+        /*
+         * GLOBAL UBC FOOTER
+         */
+
+        .ubc-institutional-footer {
+            background: var(--ubc-blue);
+            color: var(--ubc-white);
+        }
+
+        .ubc-institutional-inner {
+            width: min(var(--page-width), calc(100% - 40px));
+            margin: 0 auto;
+            padding: 34px 0 40px;
+            display: grid;
+            grid-template-columns: 5fr 7fr;
+            gap: 60px;
+        }
+
+        .ubc-footer-wordmark {
+            display: block;
+            width: 310px;
+            max-width: 100%;
+            height: 50px;
+            overflow: hidden;
+            text-indent: 200%;
+            white-space: nowrap;
+            background-image:
+                url("https://cdn.ubc.ca/clf/7.0.4/img/ubc7-clf-sprite-blue.png");
+            background-repeat: no-repeat;
+            background-position: 0 -387px;
+        }
+
+        .ubc-institutional-links {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+        }
+
+        .ubc-institutional-footer h3,
+        .ubc-institutional-footer h4 {
+            margin: 0 0 12px;
+            color: var(--ubc-white);
+            font-size: 16px;
+            line-height: 1.25;
+        }
+
+        .ubc-institutional-footer h4 {
+            margin-top: 24px;
+        }
+
+        .ubc-institutional-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .ubc-institutional-list li {
+            margin: 0 0 7px;
+        }
+
+        .ubc-institutional-list a {
+            color: var(--ubc-white);
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        .ubc-institutional-list a:hover,
+        .ubc-institutional-list a:focus {
+            text-decoration: underline;
+        }
+
+        /*
+         * LEGAL FOOTER
+         */
+
+        .ubc-legal-footer {
+            background: var(--ubc-blue);
+            color: var(--ubc-white);
+        }
+
+        .ubc-legal-footer-inner {
+            width: min(var(--page-width), calc(100% - 40px));
+            margin: 0 auto;
+            padding: 22px 0;
+            border-top: 1px solid #1f385f;
+        }
+
+        .ubc-legal-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 0;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .ubc-legal-links li {
+            display: flex;
+            align-items: center;
+        }
+
+        .ubc-legal-links li:not(:last-child)::after {
+            margin: 0 9px;
+            color: #cccccc;
+            content: "|";
+        }
+
+        .ubc-legal-links a {
+            color: var(--ubc-white);
+            font-size: 13px;
+            text-decoration: none;
+        }
+
+        .ubc-legal-links a:hover,
+        .ubc-legal-links a:focus {
+            text-decoration: underline;
+        }
+
+        /*
+         * TABLET LAYOUT
+         */
+
+        @media (max-width: 800px) {
+            .ubc-global-header {
+                height: 108px;
+            }
+
+            .ubc-wordmark {
+                width: 625px;
+                height: 76px;
+                background-size: 1375px 550px;
+            }
+
+            .verification-layout {
+                grid-template-columns: 1fr;
+                gap: 42px;
+            }
+
+            .page-content {
+                padding: 40px 0 50px;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+            .lead {
+                font-size: 18px;
+            }
+
+            .it-unit-footer-inner,
+            .ubc-institutional-inner {
+                grid-template-columns: 1fr;
+                gap: 38px;
+            }
+
+            .it-unit-link-columns,
+            .ubc-institutional-links {
+                gap: 30px;
+            }
+        }
+
+        /*
+         * MOBILE LAYOUT
+         */
+
+        @media (max-width: 520px) {
+            .ubc-global-header {
+                height: 88px;
+            }
+
+            .ubc-global-header-inner,
+            .ubc-unit-inner,
+            .ubc-navigation-rule-inner,
+            .page-content,
+            .it-unit-footer-inner,
+            .ubc-institutional-inner,
+            .ubc-legal-footer-inner {
+                width: min(
+                    100% - 28px,
+                    var(--page-width)
+                );
+            }
+
+            .ubc-wordmark {
+                width: 100%;
+                height: 50px;
+                background-size: 750px 300px;
+            }
+
+            .ubc-unit-name {
+                font-size: 17px;
+            }
+
+            .continue-button {
+                width: 100%;
+            }
+
+            .it-unit-footer-inner,
+            .ubc-institutional-inner {
+                padding: 36px 0;
+            }
+
+            .it-unit-link-columns,
+            .ubc-institutional-links {
+                grid-template-columns: 1fr;
+            }
+
+            .ubc-legal-links {
+                flex-direction: column;
+            }
+
+            .ubc-legal-links li:not(:last-child)::after {
+                display: none;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .progress-bar {
+                animation: none;
+                width: 65%;
+            }
+        }
+    </style>
+
+    <!--
+        This block is applied only when JavaScript is disabled.
+
+        The normal verification status, progress bar and useless
+        disabled button are hidden. The JavaScript-required message
+        is displayed in their place.
+    -->
+
+    <noscript>
+        <style>
+            .javascript-only {
+                display: none !important;
+            }
+
+            .javascript-disabled-message {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">
+        Skip to main content
+    </a>
+
+    <header
+        class="ubc-global-header"
+        aria-label="The University of British Columbia"
+    >
+        <div class="ubc-global-header-inner">
+            <div
+                class="ubc-wordmark"
+                role="img"
+                aria-label="The University of British Columbia"
+            ></div>
+
+            <span class="visually-hidden">
+                The University of British Columbia
+            </span>
+        </div>
+    </header>
+
+    <div class="ubc-unit-bar">
+        <div class="ubc-unit-inner">
+            <p class="ubc-unit-name">
+                UBC Cybersecurity
+            </p>
+        </div>
+    </div>
+
+    <div class="ubc-navigation-rule" aria-hidden="true">
+        <div class="ubc-navigation-rule-inner">
+            Browser verification
+        </div>
+    </div>
+
+    <main id="main-content" class="page-content">
+        <div class="verification-layout">
+            <section
+                class="verification-main"
+                aria-labelledby="verification-title"
+            >
+                <h1 id="verification-title">
+                    Verify your browser
+                </h1>
+
+                <p class="lead">
+                    Before continuing, we need to confirm that your
+                    browser supports the security features required
+                    to access this UBC service.
+                </p>
+
+                <div
+                    id="status-panel"
+                    class="status-panel"
+                    role="status"
+                    aria-live="polite"
+                >
+                    <span class="status-heading javascript-only">
+                        Verification status
+                    </span>
+
+                    <span
+                        class="status-heading javascript-disabled-message"
+                    >
+                        JavaScript required
+                    </span>
+
+                    <div id="status">
+                        <span class="javascript-only">
+                            Running browser verification...
+                        </span>
+
+                        <span class="javascript-disabled-message">
+                            You must enable JavaScript in your browser
+                            to continue to this UBC service. After
+                            enabling JavaScript, reload this page.
+                        </span>
+                    </div>
+
+                    <div
+                        class="progress-track javascript-only"
+                        aria-hidden="true"
+                    >
+                        <div class="progress-bar"></div>
+                    </div>
+                </div>
+
+                <button
+                    id="continue"
+                    class="continue-button javascript-only"
+                    type="button"
+                    disabled
+                >
+                    Continue
+                </button>
+            </section>
+
+            <aside
+                class="information-panel"
+                aria-labelledby="information-title"
+            >
+                <h2 id="information-title">
+                    Why am I seeing this?
+                </h2>
+
+                <p>
+                    This check helps protect UBC systems from
+                    automated traffic and abusive requests.
+                </p>
+
+                <p>
+                    JavaScript and browser security features must be
+                    enabled to complete verification.
+                </p>
+
+                <p>
+                    If verification repeatedly fails, reload this
+                    page or contact the support team responsible for
+                    this service.
+                </p>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <section
+            class="it-unit-footer"
+            aria-labelledby="ubccyber-footer-title"
+        >
+            <div class="it-unit-footer-inner">
+                <div>
+                    <h2 id="ubccyber-footer-title">
+                        UBC Cybersecurity
+                    </h2>
+
+                    <address class="it-unit-address">
+                        6356 Agricultural Rd<br>
+                        Vancouver, BC Canada<br>
+                        V6T 1Z2
+                    </address>
+                </div>
+
+                <div class="it-unit-link-columns">
+                    <nav aria-labelledby="related-sites-title">
+                        <h3 id="related-sites-title">
+                            Related Sites
+                        </h3>
+
+                        <ul class="it-footer-links">
+                            <li>
+                                <a href="https://www.cio.ubc.ca/">
+                                    Office of the CIO
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://privacymatters.ubc.ca/">
+                                    Privacy Matters
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://genai.ubc.ca/">
+                                    Generative AI at UBC
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://it.ok.ubc.ca/">
+                                    UBCO IT
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.careerframework.ubc.ca/">
+                                    IT Career Framework
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <nav aria-labelledby="need-help-title">
+                        <h3 id="need-help-title">
+                            Need Help?
+                        </h3>
+
+                        <ul class="it-footer-links">
+                            <li>
+                                <a href="https://it.ubc.ca/got-question-about-it-products-and-support">
+                                    Visit the IT Helpdesk
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://ubc.service-now.com/selfservice">
+                                    Login to Self-Service
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="ubc-institutional-footer"
+            aria-label="University information"
+        >
+            <div class="ubc-institutional-inner">
+                <div>
+                    <a
+                        class="ubc-footer-wordmark"
+                        href="https://www.ubc.ca/"
+                        aria-label="The University of British Columbia"
+                    >
+                        The University of British Columbia
+                    </a>
+                </div>
+
+                <div class="ubc-institutional-links">
+                    <nav aria-labelledby="about-ubc-title">
+                        <h3 id="about-ubc-title">
+                            About UBC
+                        </h3>
+
+                        <ul class="ubc-institutional-list">
+                            <li>
+                                <a href="https://www.ubc.ca/about/contact.html">
+                                    Contact UBC
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.ubc.ca/about/">
+                                    About the University
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.ubc.ca/landing/news.html">
+                                    News
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.ubc.ca/landing/events.html">
+                                    Events
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://hr.ubc.ca/careers-and-job-postings">
+                                    Careers
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://give.ubc.ca/">
+                                    Make a Gift
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.ubc.ca/search/">
+                                    Search UBC.ca
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <nav aria-labelledby="ubc-campuses-title">
+                        <h3 id="ubc-campuses-title">
+                            UBC Campuses
+                        </h3>
+
+                        <ul class="ubc-institutional-list">
+                            <li>
+                                <a href="https://www.ubc.ca/">
+                                    Vancouver Campus
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://ok.ubc.ca/">
+                                    Okanagan Campus
+                                </a>
+                            </li>
+                        </ul>
+
+                        <h4>UBC Sites</h4>
+
+                        <ul class="ubc-institutional-list">
+                            <li>
+                                <a href="https://robsonsquare.ubc.ca/">
+                                    Robson Square
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://thecdm.ca/">
+                                    Centre for Digital Media
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.med.ubc.ca/about/campuses/">
+                                    Faculty of Medicine Across BC
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="ubc-legal-footer"
+            aria-label="Legal information"
+        >
+            <div class="ubc-legal-footer-inner">
+                <ul class="ubc-legal-links">
+                    <li>
+                        <a href="https://www.ubc.ca/landing/emergencyprocedures.html">
+                            Emergency Procedures
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.ubc.ca/site/legal.html">
+                            Terms of Use
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://copyright.ubc.ca/">
+                            UBC Copyright
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.ubc.ca/accessibility/">
+                            Accessibility
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+
+    <script>
+    (() => {
+        "use strict";
+
+        /*
+         * BIG-IP replaces this value with the one-time challenge
+         * nonce before returning the page.
+         */
+
+        const nonce = "e78d9ff3d7df6c109aed33ed361a5a2985a3d11612f3811ed036fbe9555a7d59";
+
+        const probePath =
+            "/__ubc_gate_probe";
+
+        const continuePath =
+            "/__ubc_gate_continue";
+
+        const button =
+            document.getElementById("continue");
+
+        const status =
+            document.getElementById("status");
+
+        const statusPanel =
+            document.getElementById("status-panel");
+
+        const toHex = buffer =>
+            Array.from(new Uint8Array(buffer))
+                .map(value =>
+                    value.toString(16).padStart(2, "0")
+                )
+                .join("");
+
+        window.setTimeout(async () => {
+            try {
+                if (
+                    !window.crypto ||
+                    !window.crypto.subtle ||
+                    typeof TextEncoder === "undefined" ||
+                    typeof window.fetch !== "function"
+                ) {
+                    throw new Error(
+                        "Required browser capabilities unavailable"
+                    );
+                }
+
+                /*
+                 * This must match the value hashed by the iRule:
+                 *
+                 * nonce + "|" + User-Agent + "|v1"
+                 */
+
+                const material =
+                    nonce +
+                    "|" +
+                    navigator.userAgent +
+                    "|v1";
+
+                const digest =
+                    await window.crypto.subtle.digest(
+                        "SHA-256",
+                        new TextEncoder().encode(material)
+                    );
+
+                const proof =
+                    toHex(digest);
+
+                const response =
+                    await window.fetch(
+                        probePath +
+                            "?n=" +
+                            encodeURIComponent(nonce) +
+                            "&p=" +
+                            encodeURIComponent(proof),
+                        {
+                            method: "GET",
+                            credentials: "same-origin",
+                            cache: "no-store",
+                            redirect: "error",
+                            headers: {
+                                "X-Requested-With":
+                                    "XMLHttpRequest"
+                            }
+                        }
+                    );
+
+                if (response.status !== 204) {
+                    throw new Error(
+                        "Verification rejected"
+                    );
+                }
+
+                status.textContent =
+                    "Browser verified. You may continue.";
+
+                statusPanel.classList.add("verified");
+                button.disabled = false;
+                button.focus();
+
+                button.addEventListener(
+                    "click",
+                    () => {
+                        button.disabled = true;
+
+                        status.textContent =
+                            "Opening the requested UBC service...";
+
+                        window.location.assign(
+                            continuePath +
+                                "?n=" +
+                                encodeURIComponent(nonce)
+                        );
+                    }
+                );
+            } catch (error) {
+                status.textContent =
+                    "Browser verification failed. " +
+                    "Please reload the page and try again.";
+            }
+        }, 2200);
+    })();
+    </script>
+</body>
+</html>
