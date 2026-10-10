@@ -1,0 +1,3832 @@
+<!DOCTYPE html><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.6.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="ACCESS-2024" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Aarhus Comprehensive Computational Entomology Summer School, 2024" />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://darsa.info/ACCESS-2024/" />
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/ACCESS-2024/css/vendor-bundle.min.c7b8d9abd591ba2253ea42747e3ac3f5.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/ACCESS-2024/css/wowchemy.0c6c544419342ce3817e728cf69643f6.css" />
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/ACCESS-2024/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/ACCESS-2024/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HJN0ZSFGBB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-HJN0ZSFGBB', {});
+  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+  
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  
+
+  
+  
+    <link rel="alternate" href="/ACCESS-2024/index.xml" type="application/rss+xml" title="ACCESS-2024" />
+  
+
+  
+  
+    <link rel="manifest" href="/ACCESS-2024/manifest.webmanifest" />
+  
+
+  
+  <link rel="icon" type="image/png" href="/ACCESS-2024/media/icon_hu2370e8fd8da1b2d6ed75140c480413ad_90704_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/ACCESS-2024/media/icon_hu2370e8fd8da1b2d6ed75140c480413ad_90704_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://darsa.info/ACCESS-2024/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary" />
+  
+    <meta property="twitter:site" content="@qgeissmann" />
+    <meta property="twitter:creator" content="@qgeissmann" />
+  
+  <meta property="og:site_name" content="ACCESS-2024" />
+  <meta property="og:url" content="https://darsa.info/ACCESS-2024/" />
+  <meta property="og:title" content="ACCESS-2024" />
+  <meta property="og:description" content="Aarhus Comprehensive Computational Entomology Summer School, 2024" /><meta property="og:image" content="https://darsa.info/ACCESS-2024/media/icon_hu2370e8fd8da1b2d6ed75140c480413ad_90704_512x512_fill_lanczos_center_3.png" />
+    <meta property="twitter:image" content="https://darsa.info/ACCESS-2024/media/icon_hu2370e8fd8da1b2d6ed75140c480413ad_90704_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta property="og:updated_time" content="2020-12-13T00:00:00&#43;00:00" />
+    
+  
+
+  
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://darsa.info/ACCESS-2024/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  },
+  "url": "https://darsa.info/ACCESS-2024/"
+}
+</script>
+
+
+  
+
+  
+
+
+  <title>ACCESS-2024</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper   "  >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/ACCESS-2024/js/wowchemy-init.min.613040fe4f2c0f007b4dcb64404201cb.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="header--fixed">
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">ACCESS-2024</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">ACCESS-2024</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/ACCESS-2024/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/ACCESS-2024/#venue"><span>Venue</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/ACCESS-2024/#application"><span>Application</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/ACCESS-2024/#program"><span>Program</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/ACCESS-2024/#people"><span>Contributors</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/ACCESS-2024/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+<span class="js-widget-page d-none"></span>
+
+
+
+
+
+  
+  
+  
+  
+
+
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+    
+    
+    
+      
+      
+    
+    
+      
+      
+    
+    
+      
+      
+    
+  
+
+  
+    
+  
+
+  
+    
+    
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="banner" class="home-section wg-blank dark " style="padding: 80px 0 80px 0;" >
+   <div class="home-section-bg  bg-image" style="background-image: url(&#39;https://darsa.info/ACCESS-2024/media/banner-bg_hufd7daa78f73a0ea9a2b095306d3c61af_375076_1920x1920_fit_q80_h2_lanczos.webp&#39;);background-size: cover;background-position: center;filter: brightness(0.7);">
+     
+   </div>
+    <div class="container">
+
+    
+      <div class="row  justify-content-center">
+      
+    
+
+      
+
+
+
+  <div class="col-12">
+    
+  </div>
+
+
+
+    
+      </div>
+    
+
+    </div>
+  </section>
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="about" class="home-section wg-about  "  >
+   <div class="home-section-bg " >
+     
+   </div>
+    <div class="container">
+
+    
+
+      
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+  <div class="col-12 col-lg-4">
+    <div id="profile">
+
+      
+      
+      <img class="avatar avatar-circle"
+           width="270" height="270"
+           src="/ACCESS-2024/authors/admin/avatar_hu2370e8fd8da1b2d6ed75140c480413ad_90704_270x270_fill_lanczos_center_3.png" alt="ACCESS-2024">
+      
+
+      <div class="portrait-title">
+
+        <h2>ACCESS-2024</h2>
+
+        <h3>Aarhus Comprehensive Computational Entomology Summer School</h3>
+
+        
+        <h3>
+          <a href="https://international.au.dk/" target="_blank" rel="noopener">
+          <span>Aarhus University</span>
+          </a>
+        </h3>
+        
+      </div>
+
+      <ul class="network-icon" aria-hidden="true">
+        
+      </ul>
+
+    </div>
+  </div>
+  <div class="col-12 col-lg-8">
+
+    
+    <h1>A Summer School for Automated Monitoring of Insects</h1>
+
+    <div class="article-style">
+      <video id="video" controls="controls" poster="video/placeholder.jpg" preload width="100%">
+<source id="mp4" src="video/ACCESS-2024.mp4" type="video/mp4">
+</video>
+<p>Recent developments in machine learning and AI are <a href="https://www.pnas.org/doi/10.1073/pnas.2002545117" target="_blank" rel="noopener">transforming research in entomology and insect ecology</a>. However, there are too few opportunities to learn how to develop and apply these transformative methods and technologies.
+To fill this gap, we started the <strong>Aarhus  Comprehensive Computational Entomology Summer School</strong>: a five-day course to learn how to apply state-of-the-art <strong>imaging</strong>, <strong>deep-learning</strong> and <strong>AI</strong> methods to <strong>insect ecology and entomology</strong>.</p>
+<h2 id="where-and-when">Where and when</h2>
+<p>ACCESS-2024 is an <strong>in-person, residential summer school</strong> based in the beautiful <strong>Mols Bjerge National Park</strong> near Aarhus, Denmark. The event will run from <strong>September 30th</strong> to <strong>October 4th, 2024</strong>. <a href="https://international.au.dk/" target="_blank" rel="noopener">Aarhus University</a> is a highly ranked institution, located in a vibrant city, with several researchers leading the field of computational entomology.</p>
+<h2 id="what-we-offer">What we offer</h2>
+<ul>
+<li>• A fully-funded course - <strong>free tuition, accommodation and food</strong> for the selected candidates</li>
+<li>• A series of <strong>guest lectures</strong> and <strong>practical workshops</strong> from international experts</li>
+<li>• A <strong>project-based</strong> learning experience within a <strong>multidisciplinary student team</strong></li>
+<li>• Unfortunately we cannot fund travel to or from the summer school</li>
+</ul>
+<h2 id="who-the-course-is-for">Who the course is for</h2>
+<ul>
+<li>• Early career researchers (graduate students, PhD and postdocs)</li>
+<li>• Biologists (entomologists, ecologists, etc) wanting to apply computational methods to their fields</li>
+<li>• Data scientists (engineers, physicists, etc) seeking to translate their expertise to study insects</li>
+</ul>
+<h2 id="how-to-take-part">How to take part</h2>
+<ul>
+<li>• Read the <a href="#application">application section</a></li>
+<li>• Fill the <a href="https://forms.gle/5nepSFsC4tcBWbG88" target="_blank" rel="noopener">application form</a></li>
+</ul>
+
+    </div>
+
+    <div class="row">
+
+      
+
+      
+
+    </div>
+  </div>
+</div>
+
+
+    
+
+    </div>
+  </section>
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="venue" class="home-section wg-blank  "  >
+   <div class="home-section-bg " >
+     
+   </div>
+    <div class="container">
+
+    
+      <div class="row  ">
+      
+        
+          <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0">Venue</h1>
+            
+          </div>
+        
+      
+    
+
+      
+
+
+
+  <div class="col-12 col-lg-8">
+    <p align="center">
+  <img alt="mols" src="img/mols.jpg" width="80%">
+</p>
+<h3 id="the-mols-laboratory">The Mols Laboratory</h3>
+<p>Summer school participants will get free food and board at the <a href="https://www.naturhistoriskmuseum.dk/mols-laboratory/a-wilder-mols-laboratory" target="_blank" rel="noopener">Mols Laboratory research station</a>.</p>
+<p>Situated in the beautiful Mols Bjerge National Park, participants will develop new skills while immersed in Danish wildlife. Having recently become a &ldquo;Nature National Park&rdquo;, Mols Bjerge is home to a rewilding project in which Exmoor ponies and Galloway cattle are allowed to roam freely across large areas of the estate.</p>
+<p>During automated monitoring field tests and extra-curricular excursions, participants will experience these rewilding agents in action, as well as the results of the rewilding process.</p>
+<p align="center">
+  <img alt="molslab" src="img/molslab-horses.jpg" width="80%">
+</p>
+
+  </div>
+
+
+
+    
+      </div>
+    
+
+    </div>
+  </section>
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="application" class="home-section wg-blank  "  >
+   <div class="home-section-bg " >
+     
+   </div>
+    <div class="container">
+
+    
+      <div class="row  ">
+      
+        
+          <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0">Application</h1>
+            
+          </div>
+        
+      
+    
+
+      
+
+
+
+  <div class="col-12 col-lg-8">
+    <p>We can accommodate a maximum of <strong>20 candidates</strong> during our five day residential course.</p>
+<h3 id="course-requirements">Course requirements</h3>
+<p>The course is designed for early career researchers interested in computational entomology, whether they come from a biological or data science background. Specific requirements are as follows:</p>
+<ul>
+<li>Programming experience &ndash; Candidates must demonstrate at least basic programming skills, ideally in python. Otherwise, candidates will be expected to develop those skills by the start of the course.</li>
+<li>Time commitment &ndash; You must confirm that, if selected, <strong>you will be able to dedicate time</strong> to prepare for the course (30h, remotely) and then physically attend the 5-day event.</li>
+<li>Above all, candidates must be <strong>excited</strong> to apply new technologies and methods to answer interesting biological questions!</li>
+</ul>
+<h3 id="selection-process">Selection process</h3>
+<p>We will assess the motivation, competence and vision of applicants using this <a href="https://forms.gle/5nepSFsC4tcBWbG88" target="_blank" rel="noopener">application form</a>. The form requests the following:</p>
+<ul>
+<li>Motivation (Text) &ndash; You will need to provide a motivation statement (max 1500 characters) explaining your background, <strong>why you are interested in the topic</strong>, and what you hope to gain from the summer school. Ensure you explain what you have already done in this direction.</li>
+<li>CV  (PDF) &ndash; You must provide a CV, which will help us understand <strong>your background, seniority and current expertise</strong>.</li>
+<li>Project idea (text) &ndash; Importantly, this course is project-based. You must describe, in <strong>1500 characters</strong>, <strong>a specific research question or problem you (or others) have or (will have)</strong>, related to insect ecology, behaviour, entomology, etc. Ensure you explain both the biological context and how this course would help you address this issue.
+Do not be afraid of being creative and thinking out of the box: your project could be to monitor behaviour in the field or in the lab; to detect or quantify traits in insect specimens; to build novel hardware or mobile applications; to automate a task you can already do or to obtain new content. We are interested in any project related to computational entomology, and will consider projects related to other terrestrial invertebrates.</li>
+</ul>
+<h3 id="matching-process">Matching process</h3>
+<p>We will also ask you several additional questions during your application. Should you be selected, we will use this information to form teams of candidates based on complementary skills and interests.</p>
+<p>To complete your application, please fill out the <a href="https://forms.gle/5nepSFsC4tcBWbG88" target="_blank" rel="noopener">application form</a> <strong>by April 15th, 2024</strong>.</p>
+
+  </div>
+
+
+
+    
+      </div>
+    
+
+    </div>
+  </section>
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="program" class="home-section wg-blank  "  >
+   <div class="home-section-bg " >
+     
+   </div>
+    <div class="container">
+
+    
+      <div class="row  ">
+      
+        
+          <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0">Preliminary Program</h1>
+            
+          </div>
+        
+      
+    
+
+      
+
+
+
+  <div class="col-12 col-lg-8">
+    <p align="center">
+  <img alt="program" src="img/simple_program.png" width="100%">
+</p>
+
+  </div>
+
+
+
+    
+      </div>
+    
+
+    </div>
+  </section>
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="people" class="home-section wg-portfolio  "  >
+   <div class="home-section-bg " >
+     
+   </div>
+    <div class="container">
+
+    
+      <div class="row  ">
+      
+        
+          <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0">Contributors</h1>
+            
+          </div>
+        
+      
+    
+
+      
+
+
+
+
+
+
+
+
+
+
+<div class="col-12 col-lg-8">
+
+  
+
+  
+
+    
+
+    
+    
+    
+    
+      
+    
+
+    <span class="d-none default-project-filter">*</span>
+
+    
+    
+    <div class="project-toolbar">
+      <div class="project-filters">
+        <div class="btn-toolbar ">
+          <div class="btn-group flex-wrap">
+            
+              
+              
+              
+                
+              
+              <a href="#" data-filter="*" class="btn btn-primary btn-lg active">All</a>
+            
+              
+              
+              
+              <a href="#" data-filter=".js-id-keynote" class="btn btn-primary btn-lg">Keynote speakers</a>
+            
+              
+              
+              
+              <a href="#" data-filter=".js-id-assistant" class="btn btn-primary btn-lg">Assistants</a>
+            
+              
+              
+              
+              <a href="#" data-filter=".js-id-organiser" class="btn btn-primary btn-lg">Organisers</a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  
+
+  <div class="isotope projects-container js-layout-masonry ">
+
+    
+    
+
+    
+    
+      
+      
+    
+    
+    
+    
+    
+      
+    
+
+    
+    
+    
+    
+    
+
+    
+      
+        
+          <div class="project-card project-item isotope-item js-id-keynote js-id-organiser">
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Jan 1, 0001
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/ACCESS-2024/people/auto-jalison/" >
+    <div class="img-hover-zoom">
+      <img src="/ACCESS-2024/people/auto-jalison/featured_hu5608b3c145f271dd07f5aea1c8053174_94582_808x455_fill_q80_h2_lanczos_smart1.webp" height="455" width="808"
+           class="article-banner" alt="Jamie Alison" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/ACCESS-2024/people/auto-jalison/" >Jamie Alison</a>
+  </div>
+
+  
+  <a href="/ACCESS-2024/people/auto-jalison/"  class="summary-link">
+    <div class="article-style">
+      <p>Aarhus University, Co-organiser</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://twitter.com/jamiealison30" target="_blank" rel="noopener">
+    <i class="fab fa-twitter mr-1"></i>Follow</a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://orcid.org/0000-0002-6787-6192" target="_blank" rel="noopener">
+    <i class="fab fa-orcid mr-1"></i>ORCID</a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/jamiealison" target="_blank" rel="noopener">
+    <i class="fab fa-github mr-1"></i>Github</a>
+
+
+  </div>
+  
+
+</div>
+
+      </div>
+    
+      
+        
+          <div class="project-card project-item isotope-item js-id-keynote js-id-organiser">
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Jan 1, 0001
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/ACCESS-2024/people/auto-qgeissmann/" >
+    <div class="img-hover-zoom">
+      <img src="/ACCESS-2024/people/auto-qgeissmann/featured_huced4b6392e83bb25f9ee27085645a437_899623_808x455_fill_q80_h2_lanczos_smart1.webp" height="455" width="808"
+           class="article-banner" alt="Quentin Geissmann" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/ACCESS-2024/people/auto-qgeissmann/" >Quentin Geissmann</a>
+  </div>
+
+  
+  <a href="/ACCESS-2024/people/auto-qgeissmann/"  class="summary-link">
+    <div class="article-style">
+      <p>Aarhus University, Co-organiser</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://twitter.com/quentin_geissmann" target="_blank" rel="noopener">
+    <i class="fab fa-twitter mr-1"></i>Follow</a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://orcid.org/0000-0001-6546-4306" target="_blank" rel="noopener">
+    <i class="fab fa-orcid mr-1"></i>ORCID</a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/qgeissmann" target="_blank" rel="noopener">
+    <i class="fab fa-github mr-1"></i>Github</a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.researchgate.net/profile/Quentin-Geissmann" target="_blank" rel="noopener">
+    <i class="fab fa-researchgate mr-1"></i>RG</a>
+
+
+  </div>
+  
+
+</div>
+
+      </div>
+    
+      
+        
+          <div class="project-card project-item isotope-item js-id-keynote js-id-organiser">
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Jan 1, 0001
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/ACCESS-2024/people/auto-thoye/" >
+    <div class="img-hover-zoom">
+      <img src="/ACCESS-2024/people/auto-thoye/featured_hu1e00d4bce56326a1aa64edd24007a330_97484_808x455_fill_q80_h2_lanczos_smart1.webp" height="455" width="808"
+           class="article-banner" alt="Toke Høye" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/ACCESS-2024/people/auto-thoye/" >Toke Høye</a>
+  </div>
+
+  
+  <a href="/ACCESS-2024/people/auto-thoye/"  class="summary-link">
+    <div class="article-style">
+      <p>Aarhus University, Keynote speaker</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://twitter.com/TokeHoye" target="_blank" rel="noopener">
+    <i class="fab fa-twitter mr-1"></i>Follow</a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://orcid.org/0000-0001-5387-3284" target="_blank" rel="noopener">
+    <i class="fab fa-orcid mr-1"></i>ORCID</a>
+
+
+  </div>
+  
+
+</div>
+
+      </div>
+    
+      
+        
+          <div class="project-card project-item isotope-item js-id-keynote">
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Jan 1, 0001
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/ACCESS-2024/people/auto-couthwaite/" >
+    <div class="img-hover-zoom">
+      <img src="/ACCESS-2024/people/auto-couthwaite/featured_hu12a85b69eee3e46e32c80763cbe6a82c_251249_808x455_fill_q80_h2_lanczos_smart1.webp" height="455" width="808"
+           class="article-banner" alt="Charlie Outhwaite" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/ACCESS-2024/people/auto-couthwaite/" >Charlie Outhwaite</a>
+  </div>
+
+  
+  <a href="/ACCESS-2024/people/auto-couthwaite/"  class="summary-link">
+    <div class="article-style">
+      <p>University College London, Keynote speaker</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://twitter.com/CharlieLouO" target="_blank" rel="noopener">
+    <i class="fab fa-twitter mr-1"></i>Follow</a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://orcid.org/0000-0001-9997-6780" target="_blank" rel="noopener">
+    <i class="fab fa-orcid mr-1"></i>ORCID</a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/CharlieOuthwaite" target="_blank" rel="noopener">
+    <i class="fab fa-github mr-1"></i>Github</a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.researchgate.net/profile/Charlotte-Outhwaite" target="_blank" rel="noopener">
+    <i class="fab fa-researchgate mr-1"></i>RG</a>
+
+
+  </div>
+  
+
+</div>
+
+      </div>
+    
+      
+        
+          <div class="project-card project-item isotope-item js-id-keynote">
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Jan 1, 0001
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/ACCESS-2024/people/auto-gmo/" >
+    <div class="img-hover-zoom">
+      <img src="/ACCESS-2024/people/auto-gmo/featured_hue6552c98caa1bd777f41b2c41538a7e5_23342_808x455_fill_q80_h2_lanczos_smart1.webp" height="455" width="808"
+           class="article-banner" alt="Guillaume Mougeot" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/ACCESS-2024/people/auto-gmo/" >Guillaume Mougeot</a>
+  </div>
+
+  
+  <a href="/ACCESS-2024/people/auto-gmo/"  class="summary-link">
+    <div class="article-style">
+      <p>Aarhus University, Keynote speaker</p>
+    </div>
+  </a>
+  
+
+  
+
+</div>
+
+      </div>
+    
+      
+        
+          <div class="project-card project-item isotope-item js-id-keynote">
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Jan 1, 0001
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/ACCESS-2024/people/auto-hmann/" >
+    <div class="img-hover-zoom">
+      <img src="/ACCESS-2024/people/auto-hmann/featured_hucc52c5c5508181c8726e187d776d376c_144140_808x455_fill_q80_h2_lanczos_smart1.webp" height="455" width="808"
+           class="article-banner" alt="Hjalte M. R. Mann" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/ACCESS-2024/people/auto-hmann/" >Hjalte M. R. Mann</a>
+  </div>
+
+  
+  <a href="/ACCESS-2024/people/auto-hmann/"  class="summary-link">
+    <div class="article-style">
+      <p>Tecology, Keynote speaker</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://twitter.com/HjalteMann" target="_blank" rel="noopener">
+    <i class="fab fa-twitter mr-1"></i>Follow</a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://orcid.org/0000-0002-4768-4767" target="_blank" rel="noopener">
+    <i class="fab fa-orcid mr-1"></i>ORCID</a>
+
+
+  </div>
+  
+
+</div>
+
+      </div>
+    
+      
+        
+          <div class="project-card project-item isotope-item js-id-keynote">
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Jan 1, 0001
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/ACCESS-2024/people/auto-jcrall/" >
+    <div class="img-hover-zoom">
+      <img src="/ACCESS-2024/people/auto-jcrall/featured_hudd1d1805dd649af68a4bd4ca75ca4e7d_69265_808x455_fill_q80_h2_lanczos_smart1.webp" height="455" width="808"
+           class="article-banner" alt="James Crall" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/ACCESS-2024/people/auto-jcrall/" >James Crall</a>
+  </div>
+
+  
+  <a href="/ACCESS-2024/people/auto-jcrall/"  class="summary-link">
+    <div class="article-style">
+      <p>University of Wisconsin-Madison, Keynote speaker</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://twitter.com/jamesdcrall" target="_blank" rel="noopener">
+    <i class="fab fa-twitter mr-1"></i>Follow</a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://orcid.org/0000-0002-8981-3782" target="_blank" rel="noopener">
+    <i class="fab fa-orcid mr-1"></i>ORCID</a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/jamescrall" target="_blank" rel="noopener">
+    <i class="fab fa-github mr-1"></i>Github</a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.researchgate.net/profile/James-Crall" target="_blank" rel="noopener">
+    <i class="fab fa-researchgate mr-1"></i>RG</a>
+
+
+  </div>
+  
+
+</div>
+
+      </div>
+    
+      
+        
+          <div class="project-card project-item isotope-item js-id-keynote">
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Jan 1, 0001
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/ACCESS-2024/people/auto-jblair/" >
+    <div class="img-hover-zoom">
+      <img src="/ACCESS-2024/people/auto-jblair/featured_huc5478673ff966af969a58338ccaf2719_200295_808x455_fill_q80_h2_lanczos_smart1.webp" height="455" width="808"
+           class="article-banner" alt="Jarrett Blair" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/ACCESS-2024/people/auto-jblair/" >Jarrett Blair</a>
+  </div>
+
+  
+  <a href="/ACCESS-2024/people/auto-jblair/"  class="summary-link">
+    <div class="article-style">
+      <p>University of British Columbia, Keynote speaker</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://orcid.org/0000-0002-9132-8102" target="_blank" rel="noopener">
+    <i class="fab fa-orcid mr-1"></i>ORCID</a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.researchgate.net/profile/Jarrett-Blair" target="_blank" rel="noopener">
+    <i class="fab fa-researchgate mr-1"></i>RG</a>
+
+
+  </div>
+  
+
+</div>
+
+      </div>
+    
+      
+        
+          <div class="project-card project-item isotope-item js-id-keynote">
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Jan 1, 0001
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/ACCESS-2024/people/auto-jlawson/" >
+    <div class="img-hover-zoom">
+      <img src="/ACCESS-2024/people/auto-jlawson/featured_hu78648642541680be761bf25e9ec0ba36_71070_808x455_fill_q80_h2_lanczos_smart1.webp" height="455" width="808"
+           class="article-banner" alt="Jenna Lawson" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/ACCESS-2024/people/auto-jlawson/" >Jenna Lawson</a>
+  </div>
+
+  
+  <a href="/ACCESS-2024/people/auto-jlawson/"  class="summary-link">
+    <div class="article-style">
+      <p>UK Centre for Ecology &amp; Hydrology, Keynote speaker</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://orcid.org/0000-0001-5166-5510" target="_blank" rel="noopener">
+    <i class="fab fa-orcid mr-1"></i>ORCID</a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.researchgate.net/profile/Jenna_Lawson2" target="_blank" rel="noopener">
+    <i class="fab fa-researchgate mr-1"></i>RG</a>
+
+
+  </div>
+  
+
+</div>
+
+      </div>
+    
+      
+        
+          <div class="project-card project-item isotope-item js-id-keynote">
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Jan 1, 0001
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/ACCESS-2024/people/auto-lpegoraro/" >
+    <div class="img-hover-zoom">
+      <img src="/ACCESS-2024/people/auto-lpegoraro/featured_hudbcffa8ff5ba0a9630c5ff5be0272aba_83455_808x455_fill_q80_h2_lanczos_smart1.webp" height="455" width="808"
+           class="article-banner" alt="Luca Pegoraro" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/ACCESS-2024/people/auto-lpegoraro/" >Luca Pegoraro</a>
+  </div>
+
+  
+  <a href="/ACCESS-2024/people/auto-lpegoraro/"  class="summary-link">
+    <div class="article-style">
+      <p>Federal Research Institute WSL (Switzerland), Keynote speaker</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://twitter.com/LucaPegoraro3" target="_blank" rel="noopener">
+    <i class="fab fa-twitter mr-1"></i>Follow</a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://orcid.org/0000-0001-6219-1285" target="_blank" rel="noopener">
+    <i class="fab fa-orcid mr-1"></i>ORCID</a>
+
+
+  </div>
+  
+
+</div>
+
+      </div>
+    
+      
+        
+          <div class="project-card project-item isotope-item js-id-assistant">
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Jan 1, 0001
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/ACCESS-2024/people/auto-dchevalier/" >
+    <div class="img-hover-zoom">
+      <img src="/ACCESS-2024/people/auto-dchevalier/featured_hu3b1c261c52a0d3ade3a612e87b526951_2030377_808x455_fill_q80_h2_lanczos_smart1.webp" height="455" width="808"
+           class="article-banner" alt="Daphne Chevalier" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/ACCESS-2024/people/auto-dchevalier/" >Daphne Chevalier</a>
+  </div>
+
+  
+  <a href="/ACCESS-2024/people/auto-dchevalier/"  class="summary-link">
+    <div class="article-style">
+      <p>University of British Columbia, Assistant</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://orcid.org/0000-0001-5558-0610" target="_blank" rel="noopener">
+    <i class="fab fa-orcid mr-1"></i>ORCID</a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/chevalierid" target="_blank" rel="noopener">
+    <i class="fab fa-github mr-1"></i>Github</a>
+
+
+  </div>
+  
+
+</div>
+
+      </div>
+    
+      
+        
+          <div class="project-card project-item isotope-item js-id-assistant">
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Jan 1, 0001
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/ACCESS-2024/people/auto-mbaghooee/" >
+    <div class="img-hover-zoom">
+      <img src="/ACCESS-2024/people/auto-mbaghooee/featured_hub770a96aeedc6f7f1710547812a618c9_2718005_808x455_fill_q80_h2_lanczos_smart1.webp" height="455" width="808"
+           class="article-banner" alt="Melika Baghooee" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/ACCESS-2024/people/auto-mbaghooee/" >Melika Baghooee</a>
+  </div>
+
+  
+  <a href="/ACCESS-2024/people/auto-mbaghooee/"  class="summary-link">
+    <div class="article-style">
+      <p>Aarhus University, Assistant</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://orcid.org/0009-0009-9220-8303" target="_blank" rel="noopener">
+    <i class="fab fa-orcid mr-1"></i>ORCID</a>
+
+
+  </div>
+  
+
+</div>
+
+      </div>
+    
+
+  </div>
+</div>
+
+
+    
+      </div>
+    
+
+    </div>
+  </section>
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="contact" class="home-section wg-contact  "  >
+   <div class="home-section-bg " >
+     
+   </div>
+    <div class="container">
+
+    
+      <div class="row  ">
+      
+        
+          <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0">Contact</h1>
+            
+          </div>
+        
+      
+    
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col-12 col-lg-8">
+  
+
+  
+
+  <ul class="fa-ul">
+
+    
+    <li>
+      <i class="fa-li fas fa-envelope fa-2x" aria-hidden="true"></i>
+      <span id="person-email"><a href="mailto:qgeissmann@qgg.au.dk">qgeissmann@qgg.au.dk</a></span>
+    </li>
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+  </ul>
+
+  
+
+</div>
+
+
+    
+      </div>
+    
+
+    </div>
+  </section>
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="acknowledgements" class="home-section wg-blank  "  >
+   <div class="home-section-bg " >
+     
+   </div>
+    <div class="container">
+
+    
+      <div class="row  justify-content-center">
+      
+        
+          <div class="section-heading col-12 mb-3 text-center">
+            <h1 class="mb-0">Acknowledgements</h1>
+            
+          </div>
+        
+      
+    
+
+      
+
+
+
+  <div class="col-12">
+    <p>This summer school is funded by the Danish <a href="https://ufm.dk/en/research-and-innovation/funding-programmes-for-research-and-innovation/eu-and-international-funding-programmes/international-cooperation/international-network-programme-1" target="_blank" rel="noopener">Global Innovation Network Programme</a></p>
+
+  </div>
+
+
+
+    
+      </div>
+    
+
+    </div>
+  </section>
+
+
+
+
+
+
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2026 Quentin Geissmann. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+      
+      
+        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+      
+    </a>
+  </p>
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/ACCESS-2024/js/vendor-bundle.min.46271ef31da3f018e9cd1b59300aa265.js"></script>
+
+
+
+
+  
+    <script src="https://cdn.jsdelivr.net/gh/desandro/imagesloaded@v4.1.4/imagesloaded.pkgd.min.js" integrity="sha512-S5PZ9GxJZO16tT9r3WJp/Safn31eu8uWrzglMahDT4dsmgqWonRY9grk3j+3tfuPr9WJNsfooOR7Gi7HL5W2jw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/metafizzy/isotope@v3.0.6/dist/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous"></script>
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":false}</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/ACCESS-2024/en/js/wowchemy.min.a6238d5886fa4a2f7cf92df25709326f.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+      
+      <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
+<script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+</head>
+
+<script>
+
+
+
+
+$( document ).ready(function(){
+
+
+  var getFavicon = function(){
+    var favicon = undefined;
+    var nodeList = document.getElementsByTagName("link");
+    for (var i = 0; i < nodeList.length; i++)
+    {
+        if((nodeList[i].getAttribute("rel") == "icon")||(nodeList[i].getAttribute("rel") == "shortcut icon"))
+        {
+            favicon = nodeList[i].getAttribute("href");
+        }
+    }
+    console.log(favicon);
+    return favicon;
+}
+
+
+  String.prototype.hash = function() {
+    var hash = 0,
+      i, chr;
+    if (this.length === 0) return hash;
+    for (i = 0; i < this.length; i++) {
+      chr = this.charCodeAt(i);
+      hash = ((hash << 5) - hash) + chr;
+      hash |= 0; 
+    }
+    return hash;
+  }
+
+
+    $.ajax({
+        url: 'manifest.webmanifest',
+        type: 'get',
+        dataType: 'json',
+        cache: false,
+        success: function(data) { if(data != null){
+          $( '<a href="/"><img class="brand-img" src="' + data["icons"][1]["src"] +'"></a>' ).insertBefore( ".navbar-brand");
+
+        } },
+    });
+
+$("#about div.section-subheading").parent("div").removeClass("col-md-5").addClass("col-md-12");
+$("div.article-metadata").hide();
+
+
+
+   baseurl = $("a.nav-link")[0].href;
+  $("div.d-none > a:nth-child(1)").attr('href', baseurl);
+  console.log(baseurl);
+
+  $("a.navbar-brand ").attr('href', baseurl);
+  $("img.avatar-circle").css('border-radius', '5%');
+
+
+  })
+</script>
+
+      
+    
+  
+
+
+
+
+
+
+</body>
+</html>
